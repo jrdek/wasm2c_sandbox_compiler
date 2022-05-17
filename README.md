@@ -1,5 +1,7 @@
 [![Build](https://github.com/PLSysSec/wasm2c_sandbox_compiler/actions/workflows/cmake.yml/badge.svg)](https://github.com/PLSysSec/wasm2c_sandbox_compiler/actions/workflows/cmake.yml)
 
+jrdek note: static-w2crunner was compiled via musl 11.2.0, with the command `musl-gcc -ldl wasm2c/wasm-rt-staticrunner.c`
+
 # WABT: The WebAssembly Binary Toolkit
 
 WABT (we pronounce it "wabbit") is a suite of tools for WebAssembly, including:
