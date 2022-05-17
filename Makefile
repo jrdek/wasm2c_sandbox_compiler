@@ -131,6 +131,13 @@ all: $(DEFAULT_SUFFIX)
 install: install-$(DEFAULT_SUFFIX)
 test: test-$(DEFAULT_SUFFIX)
 
+
+MUSL=/usr/local/musl/bin/musl-gcc
+gem5:
+	mkdir -p bin
+	$(MUSL) -o bin/static_hfi_w2crunner -ldl wasm2c/wasm-rt-hfirunner.c
+	$(MUSL) -o bin/static_w2crunner -ldl wasm2c/wasm-rt-runner.c
+
 .PHONY: clean
 clean:
 	rm -rf out

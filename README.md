@@ -1,6 +1,9 @@
 [![Build](https://github.com/PLSysSec/wasm2c_sandbox_compiler/actions/workflows/cmake.yml/badge.svg)](https://github.com/PLSysSec/wasm2c_sandbox_compiler/actions/workflows/cmake.yml)
 
-jrdek note: static-w2crunner was compiled via musl 11.2.0, with the command `musl-gcc -ldl wasm2c/wasm-rt-staticrunner.c`
+Use the command `make gem5` to create two binaries, `bin/static_w2crunner` and `bin/static_hfi_w2crunner`.
+Make sure that in the makefile, `MUSL` is set to the location of musl-gcc 11.2.0 on your system. (This hasn't been tested with other versions)
+
+----
 
 # WABT: The WebAssembly Binary Toolkit
 
